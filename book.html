@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Booking - Book</title>
+
+    <!-- jQuery Mobile CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- jQuery Mobile Page -->
+    <div data-role="page" id="bookPage">
+
+        <!-- Header -->
+        <div data-role="header" data-theme="b">
+            <h1>Harris Library Book Booking</h1>
+        </div>
+
+        <!-- Navbar - links to all pages -->
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home" data-ajax="false">Home</a></li>
+                <li><a href="booking.html" data-icon="grid" data-ajax="false">Booking</a></li>
+                <li><a href="book.html" data-icon="info" class="ui-btn-active">Book</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div data-role="content">
+
+            <h3 style="color:#1a3c5e;font-size:1.05rem;font-weight:700;border-left:4px solid #f0c040;padding-left:10px;margin-bottom:10px">
+                Book Information
+            </h3>
+
+            <p style="font-size:0.88rem;color:#555;margin-bottom:16px">
+                Below is the list of available books you can reserve from our library.
+            </p>
+
+            <!-- Book Table -->
+            <table data-role="table" id="bookTable" class="ui-responsive table-stroke" data-mode="columntoggle" style="width:100%;font-size:0.88rem">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Copies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML Basics</td>
+                        <td>Ali</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>JavaScript</td>
+                        <td>Ahmad</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>CSS Design</td>
+                        <td>Siti</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Bootstrap</td>
+                        <td>John</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer" data-theme="a">
+            <h4>Harris Library Book Booking System &copy; 2026</h4>
+        </div>
+
+    </div>
+
+    <!-- jQuery (must load before jQuery Mobile) -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Auth JS (must load before book.js) -->
+    <script src="auth.js"></script>
+
+    <!-- Book Page JS -->
+    <script src="book.js"></script>
+
+</body>
+</html>
